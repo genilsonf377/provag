@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Notícias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: purple;
+        }
+        h2 {
+            color: black;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: purple;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            margin: 5px 0;
+        }
+        .menu a {
+            text-decoration: none;
+            color: blue;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Notícias</h1>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cadastrar.html ">Cadastrar</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>Lista</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Título</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Api</td>
+                    <td>Postman</td>
+                    <td><a href="#">editar</a> <a href="#">apagar</a></td>
+                </tr>
+                <tr>
+                    <td>Back-end</td>
+                    <td>PHP / Postgree</td>
+                    <td><a href="#">editar</a> <a href="#">apagar</a></td>
+                </tr>
+                <tr>
+                    <td>Front-end</td>
+                    <td>Cypress, Robot, Selenium</td>
+                    <td><a href="#">editar</a> <a href="#">apagar</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <h1>Desenvolvido por Genilson</h1>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Notícias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: blue;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+        form input, form select, form textarea, form button {
+            width: 100%;
+            margin-top: 5px;
+        }
+        form textarea {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Notícias</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="listar.html">Listar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastro</h2>
+        <form action="#" method="post">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+                <option value="front-end">Front-end</option>
+                <option value="back-end">Back-end</option>
+                <option value="full-stack">Full-stack</option>
+            </select>
+
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="texto">Texto:</label>
+            <textarea id="texto" name="texto" required></textarea>
+
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto">
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Redefinir</button>
+        </form>
+    </main>
+    <h1>Desenvolvido por Genilson</h1>
+</body>
+</html>
